@@ -1,0 +1,151 @@
+section {
+  margin-top: 25rem;
+  /* height: 100vh; */
+}
+
+section > h2,
+section > h5 {
+  text-align: left;
+  margin-left: 12rem;
+}
+
+section > h2 {
+  color: var(--color-white);
+  margin: 1.3rem 0 3.5rem 12rem;
+  font-size: 1.8rem;
+}
+
+section > h2:before {
+  content: '<h2>';
+  color: var(--color-bg-variant);
+  opacity: 0.6;
+  font-size: 0.8rem;
+  font-family: 'La Belle Aurore';
+  position: absolute;
+  margin-top: -0.8rem;
+  left: 12rem;
+}
+
+section > h2:after {
+  content: '</h2>';
+  color: var(--color-bg-variant);
+  opacity: 0.8;
+  font-size: 0.8rem;
+  font-family: 'La Belle Aurore';
+  position: absolute;
+  margin-top: 1.4rem;
+  margin-left: 0.4rem;
+  animation: fadeIn 1s 1.7s backwards;
+}
+
+section > h5 {
+  color: var(--color-light);
+  font-size: 0.95rem;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  /* position: absolute; */
+}
+.top-tags {
+  bottom: auto;
+  top: 1.5rem;
+}
+
+.tags {
+  position: absolute;
+  bottom: 3.4rem;
+  left: 2.8rem;
+}
+
+.tags,
+.bottom-tag-html {
+  color: var(--color-primary);
+  opacity: 0.6;
+  font-size: 1.2rem;
+  font-family: 'La Belle Aurore';
+}
+
+.bottom-tag-html {
+  position: absolute;
+  margin-left: 1.5rem;
+  bottom: 1rem;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary-variant);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  transition: var(--transition);
+  font-family: sans-serif;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-variant);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*===============MEDIUM DEVICES)==========*/
+@media screen and (max-width: 1024px) {
+  section {
+    height: 80vh;
+  }
+  .container {
+    width: var(--container-width-md);
+  }
+}
+/*===============SMALL DEVICES==========*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2,
+  section > h5 {
+    text-align: center;
+    margin-left: 0;
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+  section > h2:before {
+    margin-top: -0.7rem;
+    left: 9.5rem;
+  }
+}
