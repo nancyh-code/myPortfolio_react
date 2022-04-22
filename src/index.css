@@ -5,6 +5,7 @@
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
     url('./assets/fonts/LaBelleAurore.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
     url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 * {
@@ -41,7 +44,7 @@
   --color-bg-variant: #2a5bd5;
   --color-primary: #feb139;
   --color-primary-variant: #996d00;
-  --container-width-lg: 75%;
+  --container-width-lg: 80%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition: all 400ms ease;
