@@ -92,7 +92,7 @@ const Header = () => {
             <img src={ME} alt='me' />
           </div>
           <a href='#contact' className='scroll__down'>
-            <BsMouse /> {''}
+            <BsMouse className='scroll__down-icon' /> {''}
             <span className='scroll__down-rotate'>Scroll Down</span>
           </a>
         </div>
